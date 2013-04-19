@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/main_topbar" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/backbtn" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/res_navi_backbtn"
+                android:layout_width="70dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/navi_effect" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/res_navi_selector"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/navi_selector"
+            android:gravity="center_vertical"
+            android:text=" 공지사항"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFFFF" />
+
+        <ImageView
+            android:id="@+id/res_navi_settingbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/settingbtn" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/res_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/listrowbg"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="우리사업장은 국내산 쌀과 배추(김치류)만 사용합니다.\n상기 메뉴는 날씨와 물류사정 및 기타요인으로 인해 변경될 수 있습니다.\n특정 식품에 알러지가 있는 고객께서는 주문 전 데스크에 문의해 주세요."
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

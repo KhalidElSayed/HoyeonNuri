@@ -1,0 +1,87 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="proinfactory.com.hoyeonnuri"
+    android:versionCode="19"
+    android:versionName="2.1.5" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name=".Loading"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Board_Notice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Board_QnA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Board_Repair"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Board_Free"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Board_WebViewCtrl"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Setting_Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Setting_DevInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Restaurant_Notice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Restaurant_Jinli"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Restaurant_Hoyeon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Restaurant_3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="Restaurant_WebViewCtrl"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CollegeInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Info_Webview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Library_info_sejong"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Delivery_List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Delivery_Detail"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
